@@ -26,14 +26,14 @@ $ yarn dev
 
 ### Criando e visualizando os dados
 
-- [Listando - GET]: http://localhost:3333/forms
-- [Criando - POST]: http://localhost:3333/forms
+- Listando - GET: http://localhost:3333/forms
+- Criando - POST: http://localhost:3333/forms
 
 ```bash
   # Configure o bory para JSON
  Exemplo de campos para criar ficha:
   {
-	 "os": "OS0001",
+	"os": "OS0001",
 
   "time_initial": "09:00",
 
@@ -54,7 +54,7 @@ $ yarn dev
   amount: 20
 }
 ```
-- [Filtro - GET]: http://localhost:3333/forms/:1
+- Filtro - GET: Passe o paremetro :id como no exemplo http://localhost:3333/forms/:1 
 
 
 ### 🛠 Tecnologias
