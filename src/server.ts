@@ -1,37 +1,13 @@
 import express  from 'express'
-import {getRepository} from 'typeorm'
+import 'express-async-errors'
 
 import './database/connection'
+import routes from './routes'
+import errorHandler from './errors/handler'
 
 const app = express()
 app.use(express.json())
-
-app.post('/forms', (request, response)=>{
-
-  const {
-    
-	 os,
-
-   time_initial,
- 
-   time_final,
- 
-   date,
- 
-   location,
- 
-   name_machine,
- 
-   implement_machine,
- 
-   operator,
- 
-   input,
- 
-   amoun
-
-  } = request.body
-  response.json({message: 'Hello World'})
-})
+app.use(routes)
+app.use(errorHandler)
 
 app.listen(3333)
