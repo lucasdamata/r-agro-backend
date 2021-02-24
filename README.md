@@ -21,7 +21,7 @@ $ yarn install
 # Execute a aplicação
 $ yarn dev
 
-# O servidor iniciará na porta:3333 (http>//localhost:3333/)
+# O servidor iniciará na porta:3333 (http://localhost:3333/)
 ```
 
 ### Criando e visualizando os dados
@@ -33,7 +33,7 @@ $ yarn dev
   # Configure o bory para JSON
  Exemplo de campos para criar ficha:
   {
-	"os": "OS0001",
+   "os": "OS0001",
 
   "time_initial": "09:00",
 
